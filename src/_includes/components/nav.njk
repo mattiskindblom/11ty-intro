@@ -1,3 +1,11 @@
 <nav>
-    <h1>navbar</h1>
+    <ul>
+        {% for item in navigation.items %}
+    <li>
+        <a href="{{ item.url }}">
+            {{ item.title }}
+        </a>
+    </li>
+    {% endfor %}
+    </ul> 
 </nav>
